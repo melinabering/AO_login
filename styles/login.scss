@@ -1,0 +1,84 @@
+$branding-color:darkolivegreen;
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body{
+	margin-top: 0 !important;
+	background: white;
+	/* Margin bottom by footer height */
+    margin-bottom: 82px;
+}
+
+.container-login {
+
+	.maincontent {
+		height:calc(100vh - 82px);
+		position:relative;
+
+		.login-form{
+				position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+		}
+
+	}
+
+.login-sidebar {
+	background: url("/images/helloquence-61189.jpg");
+	height:calc(100vh - 82px);
+
+	position:relative;
+	background-size:cover;
+
+		.sidebar-overlay{
+			background:rgba($branding-color,0.85);
+			position: absolute;
+			top:0;
+			height:calc(100vh - 82px);
+			width: 100%;
+			right:0;
+
+			.sidebar-content{
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			}
+		}
+
+		*{ 
+			color:rgba(255,255,255 , 0.85); 
+		}
+
+
+		h4 {font-style:italic;;
+		}
+
+	}
+
+
+	.btn-link {
+		border:none;
+		
+	}
+
+	.btn-link:hover {
+		background:none;
+		color:#41affa;
+
+	}
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 82px;
+    background-color: #fafafa;
+	padding:15px; 
+
+}

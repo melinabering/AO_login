@@ -1,0 +1,60 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin-top: 0 !important;
+  background: white;
+  /* Margin bottom by footer height */
+  margin-bottom: 82px; }
+
+.container-login .maincontent {
+  height: calc(100vh - 82px);
+  position: relative; }
+  .container-login .maincontent .login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.container-login .login-sidebar {
+  background: url("/images/helloquence-61189.jpg");
+  height: calc(100vh - 82px);
+  position: relative;
+  background-size: cover; }
+  .container-login .login-sidebar .sidebar-overlay {
+    background: rgba(85, 107, 47, 0.85);
+    position: absolute;
+    top: 0;
+    height: calc(100vh - 82px);
+    width: 100%;
+    right: 0; }
+    .container-login .login-sidebar .sidebar-overlay .sidebar-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .container-login .login-sidebar * {
+    color: rgba(255, 255, 255, 0.85); }
+  .container-login .login-sidebar h4 {
+    font-style: italic; }
+
+.container-login .btn-link {
+  border: none; }
+
+.container-login .btn-link:hover {
+  background: none;
+  color: #41affa; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 82px;
+  background-color: #fafafa;
+  padding: 15px; }
